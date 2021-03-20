@@ -8,21 +8,18 @@ pipeline{
         eccho 'building application...'
       }
     }
-  }
   
-   stages{
     stage("test"){
       steps{
         eccho 'testing application...'
       }
     }
-  }
   
-   stages{
+
     stage("deploy"){
       steps{
         eccho 'deploying application...'
-      }
+         }
     }
   }
 }
