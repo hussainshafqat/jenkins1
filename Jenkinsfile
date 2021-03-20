@@ -2,6 +2,7 @@ pipeline{
  
   agent any
   
+  stages{
   stage("run frontend"){
       steps{
         echo 'executing yarn...'
@@ -19,7 +20,7 @@ pipeline{
        }
       }
     }
-  stages{
+ 
     stage("build"){
       steps{
         echo 'building application...'
